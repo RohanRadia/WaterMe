@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 
-def monitor():
+def monitor() -> str:
     channel = 21
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(channel, GPIO.IN)
